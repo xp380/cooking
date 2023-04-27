@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Tabs } from 'antd'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import ListData from './Container/ListData'
+
+const App = () => {
+  const items = [
+  {
+    key: '1',
+    label: 'Cooking List',
+    children: <ListData />,
+  },
+];
+ 
+  return(
+    <>
+    <Header />
+    <h1 className='title'>Cooking Code</h1>
+    <Tabs items={items}/>
+    <Footer />
+    </>
+  )
 }
 
 export default App;

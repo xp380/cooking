@@ -1,0 +1,33 @@
+.titleMeal {
+	text-align: center;
+}
+
+.descriptionMeal {
+	display: flex;
+}
+
+.pictureMeal {
+	width: 300px;
+	height: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+
+.instructionsMeal {
+	text-align: center;
+	width: 670px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titleListIng {
+	text-align: center;
+}
+
+.listIng {
+text-align: center;
+list-style: none;
+color:red;
+}
